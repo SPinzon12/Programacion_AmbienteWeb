@@ -1,37 +1,32 @@
-<script setup>
+<script>
+  import PokemonImage from '@/components/PokemonImage.vue';
+  import PokemonOptions from '@/components/PokemonOptions.vue';
+
+  export default{
+    name: 'App',
+    components: {
+      PokemonImage,PokemonOptions
+    }
+}
 </script>
 
+
+
 <template>
-  <h1 class="animate__animated animate__bounce">An animated element</h1>
+  <h1 class="animate__animated animate__bounce"> Who's That Pokémon? </h1>
+  <br>
+  <PokemonImage 
+    pokemon-id="1" 
+    show-pokemon="true" 
+  ></PokemonImage>
+
+
+  <Pokemon-options></Pokemon-options>
 </template>
 
+
+
 <style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
 .fade-in {
   animation: fadeIn;
   animation-duration:.5s;
