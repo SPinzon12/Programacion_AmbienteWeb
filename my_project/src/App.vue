@@ -1,22 +1,22 @@
 
 <template>
-  <!-- <HelloWorld title='TOF'></HelloWorld>
+  <Counter title='TOF'></Counter>
   <br>
-  <HelloWorld :start="15"></HelloWorld> -->
+  <Counter :start="15"></Counter>
   <!-- <Directives></Directives> -->
-  <Indecision ></Indecision>
+  <!-- <Indecision ></Indecision> -->
     
 </template>
 
 <script>
-  import HelloWorld from '@/components/HelloWorld.vue';
+  import Counter from '@/components/Counter.vue';
   import Directives from '@/components/Directives.vue';
   import Indecision from '@/components/Indecision.vue';
 
   export default{
     name: 'App',
     components: {
-    HelloWorld,
+    Counter,
     Directives,
     Indecision
 }
